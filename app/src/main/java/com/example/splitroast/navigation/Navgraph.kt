@@ -7,7 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.splitroast.ui.addexpense.AddExpenseScreen
 import com.example.splitroast.ui.balance.BalanceScreen
 import com.example.splitroast.ui.home.HomeScreen
-import com.example.splitroast.ui.settlepayment.SettlePaymentScreen
+import com.example.splitroast.ui.settlepayment.SettlePaymentsScreen
 
 @Composable
 fun ExpenseNavHost() {
@@ -17,7 +17,7 @@ fun ExpenseNavHost() {
         composable("home") { HomeScreen(navController) }
         composable("add_expense") { AddExpenseScreen(navController) }
         composable("balance") { BalanceScreen(navController) }
-        composable("settle_payment") { SettlePaymentScreen(navController) }
+        composable("settle_payment") { SettlePaymentsScreen("Tanishq", navController) }
 //        composable("settings") {SettingsScreen(navController)}
 //        composable("about_us") {AboutUsScreen(navController)}
     }

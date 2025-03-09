@@ -67,12 +67,12 @@ fun HomeScreen (navController: NavController) {
                     .fillMaxSize()
                     .padding(padding)
                     .background(color = Color(0xFFffb380)),
-                horizontalAlignment = Alignment.CenterHorizontally,
+                horizontalAlignment = Alignment.Start,
                 verticalArrangement = Arrangement.SpaceBetween
             ) {
                 Text(
-                    "Welcome to Split-Roast. We aim to leave you satisfied.",
-                    fontSize = 20.sp,
+                    "Welcome to Split-It",
+                    fontSize = 24 .sp,
                     color = Color(0xFF662900),
                     modifier = Modifier.padding(20.dp)
                 )
@@ -299,7 +299,7 @@ fun GearMenu() {
                     onClick = { expanded = false }
                 )
                 DropdownMenuItem(
-                    text = { Text("Option 2") },
+                    text = { Text("About us") },
                     onClick = { expanded = false }
                 )
         }
